@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #b3e5fc;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #01579b;
+}
+
+.game {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  background: #e0f7fa;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #0288d1;
+  border-radius: 10px;
+}
+
+#penguin {
+  width: 50px;
+  height: 50px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Emperor_Penguin_chick.jpg/120px-Emperor_Penguin_chick.jpg') no-repeat center / cover;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+#obstacle {
+  width: 30px;
+  height: 60px;
+  background: #4e342e;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% { right: -30px; }
+  100% { right: 600px; }
+}
